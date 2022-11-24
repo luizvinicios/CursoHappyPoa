@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf- 8 ">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Desenvolvendo javascript</title>
+
+</head>
+<body>   
+    <h2> Equação 1: 6 + 20 - 12 x 2</h2>
+    <button onclick="btnEq1()">Calcular equação</button>
+     <p id="p1"></p>
+    <script type="text/javascript">
+      function btnEq1(){
+      let equacao1 = 6 + 20 - 12 * 2 ;
+      let resultado = window.document.getElementById("equacao1")
+
+      document.getElementById('p1').innerHTML = `resultado ${equacao1}`;
+      }
+  </script>
+
+  <h2> Equação 2: 30 ÷ [10 + (2 + 3)] </h2>
+  <button onclick="btnEq2()">Calcular equação</button>
+   <p id="p2"></p>
+  <script type="text/javascript">
+    function btnEq2(){
+    let equacao2 = 30 / [10 + (2 + 3)] ;
+    let resultado = window.document.getElementById("equacao2")
+
+    document.getElementById('p2').innerHTML = `resultado ${equacao2}`;
+    }
+</script>
+
+<h2> Equação 3: [(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6 </h2>
+<button onclick="btnEq3()">Calcular equação</button>
+ <p id="p3"></p>
+<script type="text/javascript">
+  function btnEq3(){
+  let equacao3 = [(18 + 3 * 2) / 8 + 5 * 3] / 6 ;
+  let resultado = window.document.getElementById("equacao3")
+
+  document.getElementById('p3').innerHTML = `resultado ${equacao3}`;
+  }
+</script>
+
+<h2> Equação 4: [(64 - 16·4) + (48·10 - 180)]·5 </h2>
+<button onclick="btnEq4()">Calcular equação</button>
+ <p id="p4"></p>
+<script type="text/javascript">
+  function btnEq4(){
+  let equacao4 = [(64 - 16*4) + (48*10 - 180)]*5 ;
+  let resultado = window.document.getElementById("equacao4")
+
+  document.getElementById('p4').innerHTML = `resultado ${equacao4}`;
+  }
+</script>
+
+<h2> Equação 5: {[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12 </h2>
+<button onclick="btnEq5()">Calcular equação</button>
+ <p id="p5"></p>
+<script type="text/javascript">
+  function btnEq5(){
+  let equacao5 = [((8 * 4 + 3) / 7 + (3 + 15 / 5) * 3) * 2 - (19 - 7) / 6] * 2 + 12 ;
+  let resultado = window.document.getElementById("equacao5")
+
+  document.getElementById('p5').innerHTML = `resultado ${equacao5}`;
+  }
+</script>
+
+</body>
+</html>
